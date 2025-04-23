@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url("../img/body3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.phone {
+    background-image: url("../img/body2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 20px white;
+    animation: shadowColor 2s infinite alternate;
+}
+
+@keyframes shadowColor {
+    0% {
+      box-shadow: 0 0 20px red;
+    }
+    25% {
+      box-shadow: 0 0 20px orange;
+    }
+    50% {
+      box-shadow: 0 0 20px yellow;
+    }
+    75% {
+      box-shadow: 0 0 20px limegreen;
+    }
+    100% {
+      box-shadow: 0 0 20px blue;
+    }
+  }
+
+.phone i {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.phone i:hover {
+    color: aqua;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.title h4 {
+    font-size: 16px;
+    color: white;
+}
+
+.hero-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.hero-title i {
+    color: white;
+    font-size: 16px;
+}
+
+.hero-title p {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: playing 6s linear infinite;
+    animation-play-state: paused;
+}
+
+body.played .img img{
+    animation-play-state: running;
+}
+
+@keyframes playing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.music-name {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.music-name h4 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.music-name h5 {
+    color: #0B40FF;
+}
+
+.times {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.lengths {
+    width: 300px;
+    height: 3px;
+    background-color: #C4C4C480;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.length {
+    width: 100px;
+    height: 3px;
+    background-color: #0B40FF;
+    position: relative;
+}
+
+.radius {
+    width: 10px;
+    height: 10px;
+    background-color: #0B40FF;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.time h5 {
+    color: white;
+    font-size: 14px;
+}
+
+.controls-title {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.controls-bottom {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.volue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.volue input {
+    width: 220px;
+}
+
+.pause {
+    display: none !important;
+}
+
+body.played .pause {
+    display: block !important;
+}
+
+body.played .play {
+    display: none !important;
+}
+
+.playBtn i{
+    margin: 0;
+}
+
+/* media */
+
+@media (max-width:476px) {
+    body {
+        width: 100%;
+    }
+
+    .phone {
+        width: 90%;
+        padding-top: 0;
+        padding: 20px;
+    }
+
+    .img {
+       width: 200px;
+       height: 200px !important;
+    }
+
+    .img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* js boshlanishi */
+
