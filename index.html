@@ -12,19 +12,29 @@
   </head>
   <body>
     <div class="phone">
+      <div class="modal">
+        <ol class="musicList">
+        </ol>
+
+        <span class="cress">❌</span>
+      </div>
+
+
+      
       <div class="conatiner">
         <div class="title">
-            <h4 id="clock">Vaqt yuklanmoqda...</h4>
-            <span>
+          <h4 id="clock">Vaqt yuklanmoqda...</h4>
+          <span>
             <i class="fa-solid fa-signal"></i>
             <i class="fa-solid fa-wifi"></i>
             <i class="fa-solid fa-battery-full"></i>
-            </span></div>
+          </span>
+        </div>
 
         <div class="hero-title">
           <i class="fa-solid fa-arrow-left"></i>
           <p>Playlist</p>
-          <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-bars-staggered bars"></i>
         </div>
         <div class="img">
           <img class="cover" src="./img/img1.png" alt="" />
@@ -33,43 +43,43 @@
         <audio class="audio" src=""></audio>
 
         <div class="music-name">
-            <h4 class="songTitle">Song Title</h4>
-            <h5>Artist · Album Title</h5>
+          <h4 class="songTitle">Song Title</h4>
+          <h5>Artist · Album Title</h5>
         </div>
 
         <div class="times">
-            <div class="lengths">
-                <div class="length">
-                    <div class="radius"></div>
-                </div>
+          <div class="lengths">
+            <div class="length">
+              <div class="radius"></div>
             </div>
-    
-            <div class="time">
-                <h5>0:00</h5>
-                <h5>3:25</h5>
+          </div>
+
+          <div class="time">
+            <h5 class="startTime">0:00</h5>
+            <h5 class="endTime">3:25</h5>
+          </div>
+
+          <div class="controls">
+            <div class="controls-title">
+              <i class="fa-solid fa-backward back"></i>
+              <span class="playBtn">
+                <i class="fa-solid fa-play play"></i>
+                <i class="fa-solid fa-pause pause"></i>
+              </span>
+              <i class="fa-solid fa-forward next"></i>
             </div>
 
-            <div class="controls">
-               <div class="controls-title">
-                <i class="fa-solid fa-backward back"></i>
-                <span class="playBtn">
-                    <i class="fa-solid fa-play play"></i>
-                    <i class="fa-solid fa-pause pause"></i>
-                </span>
-                <i class="fa-solid fa-forward next"></i>
-               </div>
-
-               <div class="controls-bottom">
-                <i class="fa-solid fa-shuffle "></i>
-                <i class="fa-solid fa-repeat repeat"></i>
-               </div>
+            <div class="controls-bottom">
+              <i class="fa-solid fa-shuffle shuffle"></i>
+              <i class="fa-solid fa-repeat again"></i>
             </div>
+          </div>
 
-            <div class="volue">
-                <i class="fa-solid fa-volume-low"></i>
-                <input type="range">
-                <i class="fa-solid fa-volume-high"></i>
-            </div>
+          <div class="volue">
+            <i class="fa-solid fa-volume-low"></i>
+            <input class="volume" type="range" />
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
         </div>
       </div>
     </div>

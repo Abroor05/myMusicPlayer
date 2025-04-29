@@ -1,270 +1,333 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .container {
-    max-width: 320px;
-    margin: 0 auto;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 body {
-    background-image: url("../img/body3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url("../img/body3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .phone {
-    background-image: url("../img/body2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 40px 20px white;
-    animation: shadowColor 2s infinite alternate;
+  background-image: url("../img/body2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 40px 20px white;
+  animation: shadowColor 2s infinite alternate;
+  position: relative;
+  overflow: hidden;
 }
 
 @keyframes shadowColor {
-    0% {
-      box-shadow: 0 0 20px red;
-    }
-    25% {
-      box-shadow: 0 0 20px orange;
-    }
-    50% {
-      box-shadow: 0 0 20px yellow;
-    }
-    75% {
-      box-shadow: 0 0 20px limegreen;
-    }
-    100% {
-      box-shadow: 0 0 20px blue;
-    }
+  0% {
+    box-shadow: 0 0 20px red;
   }
+  25% {
+    box-shadow: 0 0 20px orange;
+  }
+  50% {
+    box-shadow: 0 0 20px yellow;
+  }
+  75% {
+    box-shadow: 0 0 20px limegreen;
+  }
+  100% {
+    box-shadow: 0 0 20px blue;
+  }
+}
 
 .phone i {
-    cursor: pointer;
-    transition: all .3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .phone i:hover {
-    color: aqua;
+  color: aqua;
 }
 
 .title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .title span {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 16px;
 }
 
 .title h4 {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }
 
 .hero-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .hero-title i {
-    color: white;
-    font-size: 16px;
+  color: white;
+  font-size: 16px;
 }
 
 .hero-title p {
-    font-size: 16px;
-    color: white;
-    font-weight: 600;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
 }
 
 .img {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .img img {
-    width: 100%;
-    height: 300px;
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: playing 6s linear infinite;
-    animation-play-state: paused;
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: playing 6s linear infinite;
+  animation-play-state: paused;
 }
 
-body.played .img img{
-    animation-play-state: running;
+body.played .img img {
+  animation-play-state: running;
 }
 
 @keyframes playing {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .music-name {
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .music-name h4 {
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .music-name h5 {
-    color: #0B40FF;
+  color: #0b40ff;
 }
 
 .times {
-    width: 300px;
-    margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .lengths {
-    width: 300px;
-    height: 3px;
-    background-color: #C4C4C480;
-    margin: 0 auto;
-    margin-bottom: 10px;
+  width: 300px;
+
+  height: 6px;
+  background-color: #c4c4c480;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .length {
-    width: 100px;
-    height: 3px;
-    background-color: #0B40FF;
-    position: relative;
+  width: 0%;
+  height: 3px;
+  background-color: #0b40ff;
+  position: relative;
 }
 
 .radius {
-    width: 10px;
-    height: 10px;
-    background-color: #0B40FF;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: #0b40ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px;
 }
 
 .time {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .time h5 {
-    color: white;
-    font-size: 14px;
+  color: white;
+  font-size: 14px;
 }
 
 .controls-title {
-    width: 280px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    margin-bottom: 20px;
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .controls-bottom {
-    width: 280px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 30px;
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .volue {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
 }
 
 .volue input {
-    width: 220px;
+  width: 220px;
 }
 
 .pause {
-    display: none !important;
+  display: none !important;
 }
 
 body.played .pause {
-    display: block !important;
+  display: block !important;
 }
 
 body.played .play {
-    display: none !important;
+  display: none !important;
 }
 
-.playBtn i{
-    margin: 0;
+.playBtn i {
+  margin: 0;
+}
+
+.repet {
+  color: red;
+}
+
+.again {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.again.active {
+  background-color: white;
+  color: #0b40ff;
+}
+
+.shuffle {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.shuffle.active {
+  background-color: white;
+  color: #0b40ff;
+}
+
+/* modal */
+
+.modal {
+    width: 100%;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    background: linear-gradient(45deg, rgb(245, 102, 102), rgb(84, 216, 242), rgb(127, 204, 127));
+    padding: 30px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.musicList li {
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+
+}
+
+.modal.active {
+    left: 0;
+}
+
+
+.cress {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
 }
 
 /* media */
 
-@media (max-width:476px) {
-    body {
-        width: 100%;
-    }
+@media (max-width: 476px) {
+  body {
+    width: 100%;
+  }
 
-    .phone {
-        width: 90%;
-        padding-top: 0;
-        padding: 20px;
-    }
+  .phone {
+    width: 100%;
+    padding-top: 0;
+    padding: 20px;
+  }
 
-    .img {
-       width: 200px;
-       height: 200px !important;
-    }
+  .img {
+    width: 200px;
+    height: 200px !important;
+  }
 
-    .img img {
-        width: 100%;
-        height: 100%;
-    }
+  .img img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* js boshlanishi */
-
