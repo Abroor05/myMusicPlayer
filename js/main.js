@@ -188,3 +188,68 @@ bars.addEventListener("click", ()=> {
 cress.addEventListener("click", ()=> {
   modal.classList.remove("active")
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("keypress", (e)=> {
+
+if(e.code == "Space") {
+  body.classList.toggle("played");
+  if (body.classList.contains("played")) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
+if(e.key == "w") {
+  if (isShuffle) {
+    index = Math.floor(Math.random() * musics.length);
+    changeMusic();
+    if (body.classList.contains("played")) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  } else {
+    if (musics.length - 1 > index) {
+      index++;
+    } else if (index > 0) {
+      index = 0;
+    }
+    changeMusic();
+    if (body.classList.contains("played")) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+}
+
+if(e.key == "s") {
+  if (index > 0) {
+    index--;
+  } else {
+    index = musics.length - 1;
+  }
+  changeMusic();
+  if (body.classList.contains("played")) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
+
+})
+
